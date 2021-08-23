@@ -16,6 +16,8 @@ class Game:
     def reset(self):
         self.board.reset_board()
         Draw.draw_board(self.screen)
+        self.player1_turn = True
+        self.game_over = False
 
     def play1(self, pos):
         mark = self.player1.mark

@@ -16,7 +16,8 @@ class Controller:
             self.game.play1(pos)
             if self.game.game_over:
                 self.game.reset()
-            self.bot_play()
+            else:
+                self.bot_play()
 
     def bot_play(self):
         if not self.game.player1_turn:

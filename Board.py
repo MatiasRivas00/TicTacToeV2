@@ -21,6 +21,7 @@ class Board:
         for i in range(3):
             for j in range(3):
                 self.board[i][j] = " "
+        print(self.board)
 
     def get_board(self):
         copy_board = [[" ", " ", " "],
